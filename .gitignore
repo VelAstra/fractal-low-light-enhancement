@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+sample_data/*.png
+!sample_data/dark.png
+!sample_data/gt_normal.png
