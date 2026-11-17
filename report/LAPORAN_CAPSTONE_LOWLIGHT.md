@@ -34,11 +34,9 @@ Tantangannya adalah meningkatkan komponen $L$ tanpa mendistorsi warna dan mengek
 2. Bagaimana memanfaatkan estimasi kekasaran fraktal untuk mengontrol penguatan kontras lokal?
 3. Bagaimana membandingkan performa metode yang dikembangkan terhadap metode acuan seperti Histogram Equalization dan Single-Scale Retinex (SSR)?
 
-### 1.3 Pembagian Tugas Tim (4 Mahasiswa)
-1. **Mahasiswa 1**: *Dataset Preprocessing* & Simulasi Citra Low-Light Sintetis.
-2. **Mahasiswa 2**: Modul Dekomposisi Retinex & Estimasi Komponen Iluminasi.
-3. **Mahasiswa 3**: Mesin *Fractal Texture Preservation* & Rekonstruksi Luminansi.
-4. **Mahasiswa 4**: Antarmuka Grafis (Tkinter GUI), Visualisasi Komparatif, & Pengujian Metrik (PSNR, SSIM, Entropi).
+### 1.3 Pembagian Tugas Tim Capstone (2 Mahasiswa)
+1. **Aji Kusuma Putra** (NIM: 22/503701/PA/21657): Preprocessing dataset low-light, sintesis citra pencahayaan rendah sintetis, modul dekomposisi Retinex, dan estimasi komponen iluminasi lingkungan adaptif. (`sample_data/generate_low_light.py`, `core/decomposition.py`).
+2. **Rayhan Haldi Hermawan** (NIM: 24/545406/PA/23176): Mesin pembobotan tekstur fraktal reflektansi, baseline pembanding (HE dan SSR), rekonstruksi luminansi, Desktop GUI Tkinter, visualisasi sebelum/sesudah, dan evaluasi metrik (Entropi, PSNR, SSIM). (`core/fractal_enhancer.py`, `core/baselines.py`, `core/evaluation.py`, `gui/app.py`, `cli.py`).
 
 ---
 

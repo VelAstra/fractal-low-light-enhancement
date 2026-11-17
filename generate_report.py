@@ -180,8 +180,8 @@ def build_pdf_report():
         styles["AcademicBody"]
     ))
 
-    story.append(Paragraph("3.2 Pembagian Tugas Tim Capstone (4 Mahasiswa)", styles["SectionHeading"]))
-    story.append(Paragraph("Tabel 3.1: Matriks Pembagian Tugas Rekayasa Tim Capstone (4 Mahasiswa)", styles["TableCaption"]))
+    story.append(Paragraph("3.2 Pembagian Tugas Tim Capstone (2 Mahasiswa)", styles["SectionHeading"]))
+    story.append(Paragraph("Tabel 3.1: Matriks Pembagian Tugas Rekayasa Tim Capstone (2 Mahasiswa)", styles["TableCaption"]))
 
     t3_data = [
         [
@@ -192,30 +192,18 @@ def build_pdf_report():
         ],
         [
             Paragraph("1", styles["TableCellCenter"]),
-            Paragraph("Mahasiswa 1", styles["TableCellLeft"]),
-            Paragraph("Preprocessing dataset low-light, sintesis citra pencahayaan rendah sintetis.", styles["TableCellLeft"]),
-            Paragraph("sample_data/generate_low_light.py", styles["TableCellCode"]),
+            Paragraph("Aji Kusuma Putra<br/><font size=7.5 color='#4A5568'>NIM: 22/503701/PA/21657</font>", styles["TableCellLeft"]),
+            Paragraph("Preprocessing dataset low-light, sintesis citra pencahayaan rendah sintetis, modul dekomposisi Retinex, dan estimasi komponen iluminasi lingkungan adaptif.", styles["TableCellLeft"]),
+            Paragraph("sample_data/generate_low_light.py<br/>core/decomposition.py", styles["TableCellCode"]),
         ],
         [
             Paragraph("2", styles["TableCellCenter"]),
-            Paragraph("Mahasiswa 2", styles["TableCellLeft"]),
-            Paragraph("Modul dekomposisi Retinex, estimasi iluminasi lingkungan.", styles["TableCellLeft"]),
-            Paragraph("core/decomposition.py", styles["TableCellCode"]),
-        ],
-        [
-            Paragraph("3", styles["TableCellCenter"]),
-            Paragraph("Mahasiswa 3", styles["TableCellLeft"]),
-            Paragraph("Mesin pembobotan tekstur fraktal reflektansi dan baseline HE/SSR.", styles["TableCellLeft"]),
-            Paragraph("core/fractal_enhancer.py<br/>core/baselines.py", styles["TableCellCode"]),
-        ],
-        [
-            Paragraph("4", styles["TableCellCenter"]),
-            Paragraph("Mahasiswa 4", styles["TableCellLeft"]),
-            Paragraph("Desktop GUI Tkinter, visualisasi perbandingan sebelum/sesudah, metrik evaluasi.", styles["TableCellLeft"]),
-            Paragraph("core/evaluation.py<br/>gui/app.py, cli.py", styles["TableCellCode"]),
+            Paragraph("Rayhan Haldi Hermawan<br/><font size=7.5 color='#4A5568'>NIM: 24/545406/PA/23176</font>", styles["TableCellLeft"]),
+            Paragraph("Mesin pembobotan tekstur fraktal reflektansi, baseline pembanding (HE dan SSR), rekonstruksi luminansi, Desktop GUI Tkinter, visualisasi sebelum/sesudah, dan evaluasi metrik (Entropi, PSNR, SSIM).", styles["TableCellLeft"]),
+            Paragraph("core/fractal_enhancer.py<br/>core/baselines.py<br/>core/evaluation.py<br/>gui/app.py, cli.py", styles["TableCellCode"]),
         ],
     ]
-    t3_table = Table(t3_data, colWidths=[24, 76, 196, 100])
+    t3_table = Table(t3_data, colWidths=[24, 106, 166, 100])
     t3_table.setStyle(get_booktabs_style(len(t3_data)))
     story.append(t3_table)
     story.append(Spacer(1, 0.4 * cm))
